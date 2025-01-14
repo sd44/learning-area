@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Native keyboard accessibility</title>
-    <style>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Native keyboard accessibility</title>
+  <style>
       input {
         margin-bottom: 10px;
       }
@@ -18,46 +18,46 @@
         font-weight: bold;
       }
     </style>
-  </head>
-  <body>
+</head>
+<body>
 
-    <h1>Links</h1>
+  <h1>Links</h1>
 
-    <p>This is a link to <a href="https://www.mozilla.org">Mozilla</a>.</p>
+  <p>This is a link to <a href="https://www.mozilla.org">Mozilla</a>.</p>
 
-    <p>Another link, to the <a href="https://developer.mozilla.org">Mozilla Developer Network</a>.</p>
+  <p>Another link, to the <a href="https://developer.mozilla.org">Mozilla Developer Network</a>.</p>
 
-    <h2>Buttons</h2>
+  <h2>Buttons</h2>
 
-    <p>
-      <button data-message="This is from the first button">Click me!</button>
-      <button data-message="This is from the second button">Click me too!</button>
-      <button data-message="This is from the third button">And me!</button>
-    </p>
+  <p>
+    <button data-message="This is from the first button">Click me!</button>
+    <button data-message="This is from the second button">Click me too!</button>
+    <button data-message="This is from the third button">And me!</button>
+  </p>
 
-    <h2>Form</h2>
+  <h2>Form</h2>
 
-    <form>
-      <div>
-        <label for="name">Fill in your name:</label>
-        <input type="text" id="name" name="name">
-      </div>
-      <div>
-        <label for="age">Enter your age:</label>
-        <input type="text" id="age" name="age">
-      </div>
-      <div>
-        <label for="mood">Choose your mood:</label>
-        <select id="mood" name="mood">
-          <option>Happy</option>
-          <option>Sad</option>
-          <option>Angry</option>
-          <option>Worried</option>
-        </select>
-      </div>
-    </form>
+  <form>
+    <div>
+      <label for="name">Fill in your name:</label>
+      <input type="text" id="name" name="name">
+    </div>
+    <div>
+      <label for="age">Enter your age:</label>
+      <input type="text" id="age" name="age">
+    </div>
+    <div>
+      <label for="mood">Choose your mood:</label>
+      <select id="mood" name="mood">
+        <option>Happy</option>
+        <option>Sad</option>
+        <option>Angry</option>
+        <option>Worried</option>
+      </select>
+    </div>
+  </form>
 
-    <script>
+  <script>
       const buttons = document.querySelectorAll('button');
 
       for(let i = 0; i < buttons.length; i++) {
@@ -71,5 +71,5 @@
         })
       }
     </script>
-  </body>
+</body>
 </html>

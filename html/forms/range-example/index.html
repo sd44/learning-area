@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>&lt;input type="range"&gt; example</title>
-    <style>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>&lt;input type="range"&gt; example</title>
+  <style>
       html, input {
         font-family: sans-serif;
       }
@@ -48,20 +48,20 @@
       }
 
     </style>
-   </head>
-  <body>
-    <form>
+</head>
+<body>
+  <form>
 
-      <div>
-        <label for="price">Choose a maximum house price: </label>
-        <input type="range" name="price" id="price" min="50000" max="500000" step="100" value="250000">
-        <output class="price-output" for="price"></output>
-      </div>
-      <div>
-        <button>Submit</button>
-      </div>
-    </form>
-    <script>
+    <div>
+      <label for="price">Choose a maximum house price: </label>
+      <input type="range" name="price" id="price" min="50000" max="500000" step="100" value="250000">
+      <output class="price-output" for="price"></output>
+    </div>
+    <div>
+      <button>Submit</button>
+    </div>
+  </form>
+  <script>
       const price = document.querySelector('#price')
       const output = document.querySelector('.price-output')
 
@@ -72,4 +72,4 @@
       });
     </script>
 </body>
-  </html>
+</html>

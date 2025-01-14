@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8"/>
-    <title>HTML5 controls: Task 2</title>
-    <style>
+<head>
+  <meta charset="utf-8"/>
+  <title>HTML5 controls: Task 2</title>
+  <style>
       body {
         background-color: #fff;
         color: #333;
@@ -16,21 +16,21 @@
         box-sizing: border-box;
       }
     </style>
-  </head>
+</head>
 
-  <body>
-    <form>
-      <ul>
-        <li>
-          <label for="max-invite">Select maximum number of invitations</label>
+<body>
+  <form>
+    <ul>
+      <li>
+        <label for="max-invite">Select maximum number of invitations</label>
           
-        </li>
-        <li>
-          <button>Submit</button>
-        </li>
-      </ul>
-    </form>
-    <script>
+      </li>
+      <li>
+        <button>Submit</button>
+      </li>
+    </ul>
+  </form>
+  <script>
       const invite = document.querySelector('#max-invite');
       const output = document.querySelector('.invite-output');
 
@@ -40,6 +40,6 @@
         output.textContent = invite.value;
       });
     </script>
-  </body>
+</body>
 
 </html>

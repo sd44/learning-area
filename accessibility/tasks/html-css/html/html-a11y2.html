@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <title>HTML accessibility: Task 2</title>
-    <link rel="stylesheet" href="../styles.css" />
-    <style>
+<head>
+  <meta charset="utf-8" />
+  <title>HTML accessibility: Task 2</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
       * {
         box-sizing: border-box;
       }
     </style>
 
-    <style class="editable">
+  <style class="editable">
       form {
         width: 400px;
       }
@@ -22,65 +22,65 @@
         margin-bottom: 20px;
       }
     </style>
-  </head>
+</head>
 
-  <body>
-    <section class="preview">
+<body>
+  <section class="preview">
 
-      <form>
-        <ul>
-          <li>
-            Name
-            <input type="text" name="name">
-          </li>
-          <li>
-            Age
-            <input type="number" name="age">
-          </li>
-          <li>
-            Email address
-            <input type="email" name="email">
-          </li>
-        </ul>
-      </form>
+    <form>
+      <ul>
+        <li>
+          Name
+          <input type="text" name="name">
+        </li>
+        <li>
+          Age
+          <input type="number" name="age">
+        </li>
+        <li>
+          Email address
+          <input type="email" name="email">
+        </li>
+      </ul>
+    </form>
 
-    </section>
+  </section>
 
-    <textarea class="playable playable-css" style="height: 130px;">
-form {
-  width: 400px;
-}
+  <textarea class="playable playable-css" style="height: 130px;">
+    form {
+    width: 400px;
+    }
 
-li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-    </textarea>
+    li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    }
+  </textarea>
 
-    <textarea class="playable playable-html" style="height: 220px;">
-<form>
-  <ul>
-    <li>
-      Name
-      <input type="text" name="name">
-    </li>
-    <li>
-      Age
-      <input type="number" name="age">
-    </li>
-    <li>
-      Email address
-      <input type="email" name="email">
-    </li>
-  </ul>
-</form>
-    </textarea>
+  <textarea class="playable playable-html" style="height: 220px;">
+    <form>
+      <ul>
+        <li>
+          Name
+          <input type="text" name="name">
+        </li>
+        <li>
+          Age
+          <input type="number" name="age">
+        </li>
+        <li>
+          Email address
+          <input type="email" name="email">
+        </li>
+      </ul>
+    </form>
+  </textarea>
 
-    <div class="playable-buttons">
-      <input id="reset" type="button" value="Reset" />
-    </div>
-  </body>
+  <div class="playable-buttons">
+    <input id="reset" type="button" value="Reset" />
+  </div>
+</body>
   <script src="../playable.js"></script>
 </html>

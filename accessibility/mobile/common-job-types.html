@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Common job types example</title>
-    <style>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Common job types example</title>
+  <style>
       html {
         font-family: sans-serif;
       }
@@ -13,28 +13,28 @@
         margin-bottom: 10px;
       }
     </style>
-  </head>
-  <body>
-    <h1>Common job types form </h1>
+</head>
+<body>
+  <h1>Common job types form </h1>
 
-    <form>
-      <div>
-        <label for="job">Job type:</label>
-        <select id="job" name="job">
-          <option value="">-- select job --</option>
-          <option value="butcher">Butcher</option>
-          <option value="baker">Baker</option>
-          <option value="candle">Candlestick maker</option>
-          <option value="other">Other</option>
-        </select>
-      </div>
-      <div>
-        <label for="other-job">Other job:</label>
-        <input type="text" name="other-job" id="other-job">
-      </div>
-    </form>
+  <form>
+    <div>
+      <label for="job">Job type:</label>
+      <select id="job" name="job">
+        <option value="">-- select job --</option>
+        <option value="butcher">Butcher</option>
+        <option value="baker">Baker</option>
+        <option value="candle">Candlestick maker</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div>
+      <label for="other-job">Other job:</label>
+      <input type="text" name="other-job" id="other-job">
+    </div>
+  </form>
 
-    <script>
+  <script>
       const select = document.querySelector('select');
       const other = document.querySelector('input');
 
@@ -49,5 +49,5 @@
       }
 
     </script>
-  </body>
+</body>
 </html>

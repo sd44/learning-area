@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
 
-    <title>Random quotes</title>
+  <title>Random quotes</title>
 
-    <style>
+  <style>
       html {
         font-family: sans-serif;
       }
@@ -28,16 +28,16 @@
         min-height: 150px;
       }
     </style>
-  </head>
+</head>
 
-  <body>
-    <section aria-live="assertive" aria-atomic="true">
-      <h1>Random quote</h1>
-      <blockquote>
-        <p></p>
-      </blockquote>
-    </section>
-    <script>
+<body>
+  <section aria-live="assertive" aria-atomic="true">
+    <h1>Random quote</h1>
+    <blockquote>
+      <p></p>
+    </blockquote>
+  </section>
+  <script>
       const quotePara = document.querySelector("section p");
 
       let quoteJson;
@@ -61,5 +61,5 @@
         quotePara.textContent = `${quoteJson[random].quote} -- ${quoteJson[random].author}`;
       }
     </script>
-  </body>
+</body>
 </html>

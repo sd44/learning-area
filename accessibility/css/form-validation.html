@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Form validation example</title>
-    <style>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Form validation example</title>
+  <style>
       html {
         font-family: sans-serif;
       }
@@ -49,29 +49,29 @@
         left: 360px;
       }
     </style>
-  </head>
-  <body>
-    <h1>Form validation example</h1>
-    <div class="errors" role="alert" aria-relevant="all">
-      <ul>
+</head>
+<body>
+  <h1>Form validation example</h1>
+  <div class="errors" role="alert" aria-relevant="all">
+    <ul>
 
-      </ul>
+    </ul>
 
+  </div>
+  <form>
+    <div>
+      <label for="name">Enter your name:</label>
+      <input type="text" name="name" id="name">
     </div>
-    <form>
-      <div>
-        <label for="name">Enter your name:</label>
-        <input type="text" name="name" id="name">
-      </div>
-      <div>
-        <label for="age">Enter your age:</label>
-        <input type="number" name="age" id="age">
-      </div>
-      <div>
-        <input type="submit">
-      </div>
-      <div></div>
-    </form>
-    <script src="validation.js"></script>
-  </body>
+    <div>
+      <label for="age">Enter your age:</label>
+      <input type="number" name="age" id="age">
+    </div>
+    <div>
+      <input type="submit">
+    </div>
+    <div></div>
+  </form>
+  <script src="validation.js"></script>
+</body>
 </html>

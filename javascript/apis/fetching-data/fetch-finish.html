@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Fetch starting point</title>
+  <title>Fetch starting point</title>
 
-    <style>
+  <style>
       html,
       pre {
         font-family: sans-serif;
@@ -35,26 +35,26 @@
         padding: 5px;
       }
     </style>
-  </head>
+</head>
 
-  <body>
-    <h1>Fetch starting point</h1>
+<body>
+  <h1>Fetch starting point</h1>
 
-    <form>
-      <label for="verse-choose">Choose a verse</label>
-      <select id="verse-choose" name="verse-choose">
-        <option>Verse 1</option>
-        <option>Verse 2</option>
-        <option>Verse 3</option>
-        <option>Verse 4</option>
-      </select>
-    </form>
+  <form>
+    <label for="verse-choose">Choose a verse</label>
+    <select id="verse-choose" name="verse-choose">
+      <option>Verse 1</option>
+      <option>Verse 2</option>
+      <option>Verse 3</option>
+      <option>Verse 4</option>
+    </select>
+  </form>
 
-    <h2>The Conqueror Worm, <em>Edgar Allen Poe, 1843</em></h2>
+  <h2>The Conqueror Worm, <em>Edgar Allen Poe, 1843</em></h2>
 
     <pre></pre>
 
-    <script>
+  <script>
       const verseChoose = document.querySelector("select");
       const poemDisplay = document.querySelector("pre");
 
@@ -96,5 +96,5 @@
       updateDisplay("Verse 1");
       verseChoose.value = "Verse 1";
     </script>
-  </body>
+</body>
 </html>

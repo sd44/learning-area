@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Basic Web Audio example</title>
-    <style>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basic Web Audio example</title>
+  <style>
       input {
         height: 1.5em;
       }
     </style>
-  </head>
-  <body>
-    <audio src="outfoxing.mp3"></audio>
+</head>
+<body>
+  <audio src="outfoxing.mp3"></audio>
 
-    <button class="paused">Play</button>
-    <br />
-    <input type="range" min="0" max="1" step="0.01" value="1" class="volume" />
+  <button class="paused">Play</button>
+  <br />
+  <input type="range" min="0" max="1" step="0.01" value="1" class="volume" />
 
-    <script>
+  <script>
       // Create an AudioContext (cross browser)
       const AudioContext = window.AudioContext || window.webkitAudioContext;
       const audioCtx = new AudioContext();
@@ -68,5 +68,5 @@
 
       // Track credit: Outfoxing the Fox by Kevin MacLeod under Creative Commons
     </script>
-  </body>
+</body>
 </html>

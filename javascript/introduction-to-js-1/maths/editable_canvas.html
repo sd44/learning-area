@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Editable canvas example</title>
-    <style>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Editable canvas example</title>
+  <style>
       html {
         font-family: sans-serif;
       }
@@ -53,66 +53,66 @@
         padding-bottom: 0.5em;
       }
     </style>
-  </head>
-  <body>
-    <h2>Live output</h2>
-    <canvas id="canvas" width="400" height="250" class="playable-canvas">
-    </canvas>
+</head>
+<body>
+  <h2>Live output</h2>
+  <canvas id="canvas" width="400" height="250" class="playable-canvas">
+  </canvas>
 
-    <p>The rectangle is 50px wide and 50px high.</p>
+  <p>The rectangle is 50px wide and 50px high.</p>
 
-    <h2>Editable code</h2>
-    <p class="a11y-label">
-      Press Esc to move focus away from the code area (Tab inserts a tab
-      character).
-    </p>
-    <textarea id="code" class="playable-code" style="height: 150px; width: 95%">
-// Edit the two lines below here ONLY
-x = 50;
-y = 50;
+  <h2>Editable code</h2>
+  <p class="a11y-label">
+    Press Esc to move focus away from the code area (Tab inserts a tab
+    character).
+  </p>
+  <textarea id="code" class="playable-code" style="height: 150px; width: 95%">
+    // Edit the two lines below here ONLY
+    x = 50;
+    y = 50;
 
-ctx.fillStyle = 'green';
-ctx.fillRect(10, 10, x, y);
-    </textarea>
+    ctx.fillStyle = 'green';
+    ctx.fillRect(10, 10, x, y);
+  </textarea>
 
-    <div class="playable-buttons">
-      <input id="reset" type="button" value="Reset" />
-    </div>
-    <div>
-      <p>Let's try the following:</p>
-      <ol>
-        <li>
-          Change the line that calculates x so the box is still 50px wide, but
-          the 50 is calculated using the numbers 43 and 7 and an arithmetic
-          operator.
-        </li>
-        <li>
-          Change the line that calculates y so the box is 75px high, but the 75
-          is calculated using the numbers 25 and 3 and an arithmetic operator.
-        </li>
-        <li>
-          Change the line that calculates x so the box is 250px wide, but the
-          250 is calculated using two numbers and the remainder (modulo)
-          operator.
-        </li>
-        <li>
-          Change the line that calculates y so the box is 150px high, but the
-          150 is calculated using three numbers and the subtraction and division
-          operators.
-        </li>
-        <li>
-          Change the line that calculates x so the box is 200px wide, but the
-          200 is calculated using the number 4 and an assignment operator.
-        </li>
-        <li>
-          Change the line that calculates y so the box is 200px high, but the
-          200 is calculated using the numbers 50 and 3, the multiplication
-          operator, and the addition assignment operator.
-        </li>
-      </ol>
-    </div>
+  <div class="playable-buttons">
+    <input id="reset" type="button" value="Reset" />
+  </div>
+  <div>
+    <p>Let's try the following:</p>
+    <ol>
+      <li>
+        Change the line that calculates x so the box is still 50px wide, but
+        the 50 is calculated using the numbers 43 and 7 and an arithmetic
+        operator.
+      </li>
+      <li>
+        Change the line that calculates y so the box is 75px high, but the 75
+        is calculated using the numbers 25 and 3 and an arithmetic operator.
+      </li>
+      <li>
+        Change the line that calculates x so the box is 250px wide, but the
+        250 is calculated using two numbers and the remainder (modulo)
+        operator.
+      </li>
+      <li>
+        Change the line that calculates y so the box is 150px high, but the
+        150 is calculated using three numbers and the subtraction and division
+        operators.
+      </li>
+      <li>
+        Change the line that calculates x so the box is 200px wide, but the
+        200 is calculated using the number 4 and an assignment operator.
+      </li>
+      <li>
+        Change the line that calculates y so the box is 200px high, but the
+        200 is calculated using the numbers 50 and 3, the multiplication
+        operator, and the addition assignment operator.
+      </li>
+    </ol>
+  </div>
 
-    <script>
+  <script>
       const canvas = document.getElementById("canvas");
       const para = document.querySelector("p");
       const ctx = canvas.getContext("2d");
@@ -168,5 +168,5 @@ ctx.fillRect(10, 10, x, y);
         textarea.scrollTop = scrollPos;
       }
     </script>
-  </body>
+</body>
 </html>

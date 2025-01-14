@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>JavaScript label example</title>
-    <style>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>JavaScript label example</title>
+  <style>
       button {
         font-family: "helvetica neue", helvetica, sans-serif;
         letter-spacing: 1px;
@@ -19,11 +19,11 @@
         cursor: pointer;
       }
     </style>
-  </head>
-  <body>
-    <button type="button">Player 1: Chris</button>
+</head>
+<body>
+  <button type="button">Player 1: Chris</button>
 
-    <script>
+  <script>
       const button = document.querySelector("button");
 
       button.addEventListener("click", updateName);
@@ -33,5 +33,5 @@
         button.textContent = `Player 1: ${name}`;
       }
     </script>
-  </body>
+</body>
 </html>

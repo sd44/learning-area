@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <title>Events: Task 2</title>
-    <link rel="stylesheet" href="../styles.css" />
-    <style>
+<head>
+  <meta charset="utf-8" />
+  <title>Events: Task 2</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
       * {
         box-sizing: border-box;
       }
@@ -23,47 +23,47 @@
         border: 1px solid black;
       }
     </style>
-  </head>
+</head>
 
-  <body>
-    <section class="preview">
+<body>
+  <section class="preview">
 
-    </section>
+  </section>
 
-    <canvas width="480" height="320" tabindex="0">
+  <canvas width="480" height="320" tabindex="0">
 
-    </canvas>
+  </canvas>
 
 
-    <textarea class="playable playable-js" style="height: 220px;">
+  <textarea class="playable playable-js" style="height: 220px;">
 
-const canvas = document.querySelector('canvas');
-const ctx = canvas.getContext('2d');
+    const canvas = document.querySelector('canvas');
+    const ctx = canvas.getContext('2d');
 
-function drawCircle(x, y, size) {
-  ctx.fillStyle = 'white';
-  ctx.fillRect(0, 0, canvas.width, canvas.height);
+    function drawCircle(x, y, size) {
+    ctx.fillStyle = 'white';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-  ctx.beginPath();
-  ctx.fillStyle = 'black';
-  ctx.arc(x, y, size, 0, 2 * Math.PI);
-  ctx.fill();
-}
+    ctx.beginPath();
+    ctx.fillStyle = 'black';
+    ctx.arc(x, y, size, 0, 2 * Math.PI);
+    ctx.fill();
+    }
 
-let x = 50;
-let y = 50;
-const size = 30;
+    let x = 50;
+    let y = 50;
+    const size = 30;
 
-drawCircle(x, y, size);
+    drawCircle(x, y, size);
 
-// Add your code here
+    // Add your code here
 
-    </textarea>
+  </textarea>
 
-    <div class="playable-buttons">
-      <input id="reset" type="button" value="Reset" />
-    </div>
-  </body>
+  <div class="playable-buttons">
+    <input id="reset" type="button" value="Reset" />
+  </div>
+</body>
   <script class="editable"></script>
   <script src="../playable.js"></script>
 </html>

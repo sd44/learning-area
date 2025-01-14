@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8"/>
-    <title>JavaScript accessibility: Task 1</title>
-    <style>
+<head>
+  <meta charset="utf-8"/>
+  <title>JavaScript accessibility: Task 1</title>
+  <style>
       p {
         color: purple;
         margin: 0.5em 0;
@@ -17,34 +17,34 @@
         cursor: pointer;
       }
     </style>
-    <link rel="stylesheet" href="../styles.css" />
-  </head>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
 
-  <body>
+<body>
 
-    <section class="preview">
+  <section class="preview">
 
-      <div class="animal-list">
-        <h1>Animal summaries</h1>
+    <div class="animal-list">
+      <h1>Animal summaries</h1>
 
-        <p>The following list of animals can be clicked to display a description of that animal.</p>
+      <p>The following list of animals can be clicked to display a description of that animal.</p>
 
-        <ul>
-          <li tabindex="0" data-description="A type of wild mountain goat, with large recurved horns, found in Eurasia, North Africa, and East Africa.">Ibex</li>
-          <li tabindex="0" data-description="A medium-sized marine mammal, similar to a manatee, but with a Dolphin-like tail.">Dugong</li>
-          <li tabindex="0" data-description="A rare marsupial, which looks rather like a tiny kangaroo, measuring around 50 to 75 centimeters.">Quokka</li>
-        </ul>
-      </div>
+      <ul>
+        <li tabindex="0" data-description="A type of wild mountain goat, with large recurved horns, found in Eurasia, North Africa, and East Africa.">Ibex</li>
+        <li tabindex="0" data-description="A medium-sized marine mammal, similar to a manatee, but with a Dolphin-like tail.">Dugong</li>
+        <li tabindex="0" data-description="A rare marsupial, which looks rather like a tiny kangaroo, measuring around 50 to 75 centimeters.">Quokka</li>
+      </ul>
+    </div>
 
-      <div class="animal-description">
-        <h2></h2>
+    <div class="animal-description">
+      <h2></h2>
 
-        <p></p>
-      </div>
+      <p></p>
+    </div>
 
-    </section>
+  </section>
 
-  </body>
+</body>
   <script>
 
     const listItems = document.querySelectorAll('li');
