@@ -33,6 +33,7 @@ export default [
           Attribute: 1,
           tagChildrenIndent: {
             html: 0,
+            script: 0,
             div: 1,
           },
         },

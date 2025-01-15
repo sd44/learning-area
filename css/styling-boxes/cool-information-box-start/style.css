@@ -3,3 +3,23 @@ html {
 }
 
 /* Your CSS below here */
+
+div{
+    width: 200px;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: darkcyan;
+    color:darkcyan;
+    /* 使用黑色的文字阴影增加可读性。 */
+    text-shadow: 0 0 15px black;
+    border-radius: 10px;
+    border: 1px solid cyan;
+    /* 指向右下角的黑色半透明线性渐变，让它在开始的时候完全透明，在 30% 的处渐变到 0.2 的不透明度，然后保持相同颜色到最后。 */
+    background-image: linear-gradient(40deg, transparent 30%, rgba(0, 0, 0, 0.2) 30%);
+
+    /* 多个盒阴影：一个标准的盒阴影，使它看起来稍微从页面上浮起来；另外两个是内嵌（inset）的盒阴影，一个是左上角附近的白色半透明阴影和另一个是右下角附近的黑色半透明阴影，让盒子有一个漂亮的 3D 外观。 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), inset 5px 5px 10px rgba(255, 255, 255, 0.5), inset -5px -5px 10px rgba(0, 0, 0, 0.5);
+
+}
