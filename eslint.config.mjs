@@ -1,17 +1,16 @@
-import globals from 'globals'
-import pluginJs from '@eslint/js'
+import globals from 'globals';
+import pluginJs from '@eslint/js';
 // import pluginReact from "eslint-plugin-react";
 
 // https://html-eslint.org/
 // npm install --save-dev eslint @html-eslint/parser @html-eslint/eslint-plugin eslint-config-prettier
-import html from 'eslint-plugin-html'
-import htmles from '@html-eslint/eslint-plugin'
-import eslintConfigPrettier from 'eslint-config-prettier'
-import PARSER_HTML from '@html-eslint/parser'
+import html from 'eslint-plugin-html';
+import htmles from '@html-eslint/eslint-plugin';
+import eslintConfigPrettier from 'eslint-config-prettier';
+import PARSER_HTML from '@html-eslint/parser';
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
-  eslintConfigPrettier,
   {
     // recommended configuration included in the plugin
     ...htmles.configs['flat/recommended'],
@@ -32,8 +31,8 @@ export default [
         {
           Attribute: 1,
           tagChildrenIndent: {
-            html: 0,
-            script: 0,
+            html: 1,
+            script: 1,
             div: 1,
           },
         },
@@ -46,8 +45,12 @@ export default [
   {
     // recommended configuration included in the plugin
     files: ['**/*.{js,mjs,cjs,jsx}'],
+    rules: {
+      'no-unexpected-multiline': 'off', // 关闭规则
+    },
   },
   { languageOptions: { globals: globals.browser } },
   pluginJs.configs.recommended,
   // pluginReact.configs.flat.recommended,
-]
+  eslintConfigPrettier,
+];
