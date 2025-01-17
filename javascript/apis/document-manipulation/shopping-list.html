@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-US">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shopping list example</title>
-  <style>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping list example</title>
+    <style>
       li {
         margin-bottom: 10px;
       }
@@ -15,23 +15,54 @@
         color: #666;
       }
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <h1>My shopping list</h1>
 
-  <h1>My shopping list</h1>
+    <div>
+      <label for="item">Enter a new item:</label>
+      <input type="text" name="item" id="item" />
+      <button>Add item</button>
+    </div>
 
-  <div>
-    <label for="item">Enter a new item:</label>
-    <input type="text" name="item" id="item">
-    <button>Add item</button>
-  </div>
+    <ul></ul>
 
-  <ul>
+    <script>
+      const table = document.querySelector('ul');
+      const input = document.querySelector('input');
+      const btn = document.querySelector('button');
+      btn.addEventListener('click', function () {
+        const item = input.value;
+        if (item === '') {
+          return;
+        } else {
+          const li = document.createElement('li');
+          li.textContent = item;
 
-  </ul>
+          const button = document.createElement('button');
+          button.textContent = 'Delete';
+          button.addEventListener('click', function () {
+            table.removeChild(li);
+          });
+          li.appendChild(button);
+          table.appendChild(li);
 
-  <script>
+          input.value = '';
 
+          input.focus();
+        }
+
+        /*
+         *         var button = document.createElement('button');
+         *         button.textContent = 'Delete';
+         *         li.appendChild(button);
+         *
+         *         table.appendChild(li);
+         *
+         *         button.addEventListener('click', function() {
+         *           table.removeChild(li);
+         *         }); */
+      });
     </script>
-</body>
+  </body>
 </html>
