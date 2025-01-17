@@ -1,25 +1,10 @@
-var people = ['Chris', 'Anne', 'Colin', 'Terri', 'Phil', 'Lola', 'Sam', 'Kay', 'Bruce'];
-
-var admitted = document.querySelector('.admitted');
-var refused = document.querySelector('.refused');
-admitted.textContent = 'Admit: ';
-refused.textContent = 'Refuse: ';
-
-for (var guest of people) {
-  if (guest === 'Phil' || guest === 'Lola') {
-    refused.textContent += guest + ', ';
-  } else {
-    admitted.textContent += guest + ', ';
-  }
-}
-
-if (refused.textContent.endsWith(', ')) {
-  refused.textContent = refused.textContent.slice(0, -2);
-}
-if (admitted.textContent.endsWith(', ')) {
-  admitted.textContent = admitted.textContent.slice(0, -2);
-}
-// var i = 0;
-
-// refused.textContent += ;
-// admitted.textContent += ;
+const person = {
+  name: ['Bob', 'Smith'],
+  age: 32,
+  bio: function () {
+    console.log(`${this.name[0]} ${this.name[1]} 现在 ${this.age} 岁了。`);
+  },
+  introduceSelf: function () {
+    console.log(`你好！我是 ${this.name[0]}。`);
+  },
+};
