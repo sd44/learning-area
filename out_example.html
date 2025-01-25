@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>example</title>
+  <style>
+    body {
+      font-family: "lucida grande", "lucida sans unicode", lucida, helvetica,
+        "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+      font-size: 16px;
+      line-height: 3;
+      margin: 20px;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: inline-block;
+      position: relative;
+      margin: 0 2px;
+    }
+
+    .translation {
+      position: absolute;
+      top: 25px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 14px;
+      color: #0000ff;
+      white-space: nowrap;
+    }
+
+    .underline {
+      text-decoration: underline 2px rgba(13, 110, 253, 0.2);
+      text-underline-offset: 0.32em;
+      /* 调整下划线位置 (可以尝试其他值) */
+    }
+  </style>
+</head>
+<body>
+<p>By now the problem should be [obvious|明显的]. Anger involves a loss
+of [control|控制]. But to be [effective|有效的] in the workplace, it
+needs to be carefully [modulated|调整].测试 [ppppPP|测试]</p>
+<p>By now the problem should be [obvious|明显的]. Anger involves a loss
+of [control|控制]. But to be [effective|有效的] in the workplace, it
+needs to be carefully [modulated|调整].测试 [ppppPP|测试]</p>
+<p>By now the problem should be [obvious|明显的]. Anger involves a loss
+of [control|控制]. But to be [effective|有效的] in the workplace, it
+needs to be carefully [modulated|调整].By now the problem should be
+[obvious|明显的]. Anger involves a loss of [control|控制]. But to be
+[effective|有效的] in the workplace, it needs to be carefully
+[modulated|调整].By now the problem should be [obvious|明显的]. Anger
+involves a loss of [control|控制]. But to be [effective|有效的] in the
+workplace, it needs to be carefully [modulated|调整].By now the problem
+should be [obvious|明显的]. Anger involves a loss of [control|控制]. But
+to be [effective|有效的] in the workplace, it needs to be carefully
+[modulated|调整].测试 [ppppPP|测试]</p>
+<script>
+  const select = document.querySelectorAll('p');
+
+  for (let i of select) {
+    let para = i.textContent.replaceAll(
+      '[',
+      '<span class="container">\n      <span class="underline">',
+    );
+    para = para.replaceAll('|', '</span>\n      <span class="translation">');
+    para = para.replaceAll(']', '</span>\n    </span>');
+    i.innerHTML = para;
+  }
+</script>
+</body>
+</html>

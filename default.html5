@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="$lang$" xml:lang="$lang$"$if(dir)$ dir="$dir$"$endif$>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+$for(author-meta)$
+  <meta name="author" content="$author-meta$" />
+$endfor$
+$if(date-meta)$
+  <meta name="dcterms.date" content="$date-meta$" />
+$endif$
+$if(keywords)$
+  <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />
+$endif$
+$if(description-meta)$
+  <meta name="description" content="$description-meta$" />
+$endif$
+  <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
+  <style>
+    body {
+      font-family: "lucida grande", "lucida sans unicode", lucida, helvetica,
+        "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+      font-size: 16px;
+      line-height: 3;
+      margin: 20px;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: inline-block;
+      position: relative;
+      margin: 0 2px;
+    }
+
+    .translation {
+      position: absolute;
+      top: 25px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 14px;
+      color: #0000ff;
+      white-space: nowrap;
+    }
+
+    .underline {
+      text-decoration: underline 2px rgba(13, 110, 253, 0.2);
+      text-underline-offset: 0.32em;
+      /* 调整下划线位置 (可以尝试其他值) */
+    }
+  </style>
+$for(css)$
+  <link rel="stylesheet" href="$css$" />
+$endfor$
+$for(header-includes)$
+  $header-includes$
+$endfor$
+$if(math)$
+  $math$
+$endif$
+</head>
+<body>
+$for(include-before)$
+$include-before$
+$endfor$
+$if(title)$
+<header id="title-block-header">
+<h1 class="title">$title$</h1>
+$if(subtitle)$
+<p class="subtitle">$subtitle$</p>
+$endif$
+$for(author)$
+<p class="author">$author$</p>
+$endfor$
+$if(date)$
+<p class="date">$date$</p>
+$endif$
+$if(abstract)$
+<div class="abstract">
+<div class="abstract-title">$abstract-title$</div>
+$abstract$
+</div>
+$endif$
+</header>
+$endif$
+$if(toc)$
+<nav id="$idprefix$TOC" role="doc-toc">
+$if(toc-title)$
+<h2 id="$idprefix$toc-title">$toc-title$</h2>
+$endif$
+$table-of-contents$
+</nav>
+$endif$
+$body$
+$for(include-after)$
+$include-after$
+$endfor$
+<script>
+  const select = document.querySelectorAll('p');
+
+  for (let i of select) {
+    let para = i.textContent.replaceAll(
+      '[',
+      '<span class="container">\n      <span class="underline">',
+    );
+    para = para.replaceAll('|', '</span>\n      <span class="translation">');
+    para = para.replaceAll(']', '</span>\n    </span>');
+    i.innerHTML = para;
+  }
+</script>
+</body>
+</html>
