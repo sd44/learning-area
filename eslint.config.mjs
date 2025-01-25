@@ -30,10 +30,10 @@ export default [
         2,
         {
           Attribute: 1,
-          tagChildrenIndent: {
-            html: 0,
-            div: 1,
-          },
+          // tagChildrenIndent: {
+          //   html: 0,
+          //   div: 1,
+          // },
         },
       ],
       '@html-eslint/no-extra-spacing-attrs': 'off',
