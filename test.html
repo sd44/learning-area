@@ -1,19 +1,35 @@
 <style>
-a:link, a:visited {
-color: red;
+p,
+ul {
+  border: 2px solid rebeccapurple;
 }
 
-li a:link, a:visited{
-  display: block;
-  color: goldenrod;
+span,
+li {
+  border: 2px solid blue;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  flex-flow: column wrap;
+}
+
+.inline {
+  display: inline;
 }
 </style>
 
-<a href="mailto:no-reply@none.none">reply my mail</a>
-
+<p>
+  I am a paragraph. Some of the
+  <span>words</span> have been wrapped in a
+  <span>span element</span>.
+</p>
 <ul>
-  <li>Email: <a href="mailto:jane@example.com">jane@example.com</a></li>
-  <li>Web: <a href="http://example.com">http://example.com</a></li>
-  <li>Web: <a href="http://example.com">http://example.com</a></li>
-  <li>Tel: 123 45678</li>
+  <li>Item One</li>
+  <li>Item Two</li>
+  <li>Item Three</li>
 </ul>
+<p class="inline">I am a paragraph. A short one.</p>
+<p class="inline">I am another paragraph. Also a short one.</p>
