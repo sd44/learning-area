@@ -6,8 +6,8 @@ import pluginJs from '@eslint/js';
 // npm install --save-dev eslint @html-eslint/parser @html-eslint/eslint-plugin eslint-config-prettier
 import html from 'eslint-plugin-html';
 import htmles from '@html-eslint/eslint-plugin';
-import eslintConfigPrettier from 'eslint-config-prettier';
 import PARSER_HTML from '@html-eslint/parser';
+import eslintConfigPrettier from 'eslint-config-prettier';
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
@@ -32,7 +32,7 @@ export default [
           Attribute: 1,
           // tagChildrenIndent: {
           //   html: 0,
-          //   div: 1,
+          //   // div: 1,
           // },
         },
       ],
